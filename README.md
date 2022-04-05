@@ -13,7 +13,7 @@ http://localhost:8080/swagger-ui.html
 ## Acceso a H2 Console
 http://localhost:8080/h2-console
 
-** Datos de acceso para H2 **
+**Datos de acceso para H2**[src/main/resources/application.yml][PlH2]
 ```sh
 JDBC URL: jdbc:h2:mem:APIRESTconSpringBoot
 User Name: user
