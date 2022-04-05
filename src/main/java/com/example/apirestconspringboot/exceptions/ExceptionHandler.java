@@ -8,11 +8,10 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 @ControllerAdvice
 public class ExceptionHandler extends ResponseEntityExceptionHandler {
-    @org.springframework.web.bind.annotation.ExceptionHandler(value = {ToDoException.class })
-    protected ResponseEntity<Object> handleConflict(
-            ToDoException ex, WebRequest request) {
+    @org.springframework.web.bind.annotation.ExceptionHandler(value = { ToDoException.class })
+    protected ResponseEntity<Object> handleConflict(ToDoException ex, WebRequest request) {
         String bodyOfResponse = ex.getMessage();
-        return handleExceptionInternal(ex, bodyOfResponse,
-                new HttpHeaders(), ex.getHttpStatus(), request);
+
+        return handleExceptionInternal(ex, bodyOfResponse, new HttpHeaders(), ex.getHttpStatus(), request);
     }
 }
