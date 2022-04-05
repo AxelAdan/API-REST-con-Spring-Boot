@@ -3,10 +3,9 @@ package com.example.apirestconspringboot.controller;
 import com.example.apirestconspringboot.dto.TaskInDTO;
 import com.example.apirestconspringboot.persistence.entities.Task;
 import com.example.apirestconspringboot.service.TaskService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/tasks")
@@ -20,5 +19,10 @@ public class TaskController {
     @PostMapping
     public Task createTask(@RequestBody TaskInDTO taskInDTO) {
         return this.taskService.createTask(taskInDTO);
+    }
+
+    @GetMapping
+    public List<Task> findAll() {
+        return this.taskService.getAllTasks();
     }
 }

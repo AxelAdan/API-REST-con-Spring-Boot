@@ -6,6 +6,8 @@ import com.example.apirestconspringboot.persistence.repository.TaskRepository;
 import com.example.apirestconspringboot.dto.TaskInDTO;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class TaskService {
     private final TaskRepository repository;
@@ -20,5 +22,9 @@ public class TaskService {
         Task task = mapper.map(taskInDTO);
 
         return this.repository.save(task);
+    }
+
+    public List<Task> getAllTasks() {
+        return this.repository.findAll();
     }
 }
