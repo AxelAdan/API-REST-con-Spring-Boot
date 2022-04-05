@@ -13,7 +13,6 @@ http://localhost:8080/swagger-ui.html
 ## Acceso a H2 Console
 http://localhost:8080/h2-console
 
-
 [**Datos de acceso para H2**](https://github.com/AxelAdan/API-REST-con-Spring-Boot/blob/main/src/main/resources/application.yml)
 ```sh
 JDBC URL: jdbc:h2:mem:APIRESTconSpringBoot
