@@ -2,10 +2,10 @@
 Este es un proyecto en el cual creo mi primer API REST con Spring Boot.
 
 Dicho proyecto es creado con:
-- Java
-- JPA
-- Spring Boot
-- H2 (Database Engine)
+- [Java](https://www.oracle.com/mx/java/technologies/javase/jdk11-archive-downloads.html)
+- [JPA](https://www.ibm.com/docs/es/was-liberty/nd?topic=overview-java-persistence-api-jpa)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [H2 (Database Engine)](https://www.h2database.com/html/main.html)
 
 ## Acceso a Swagger UI
 http://localhost:8080/swagger-ui.html
@@ -14,6 +14,8 @@ http://localhost:8080/swagger-ui.html
 http://localhost:8080/h2-console
 
 ** Datos de acceso para H2 **
-> JDBC URL: jdbc:h2:mem:APIRESTconSpringBoot
-> User Name: user
-> Password: password
+```sh
+JDBC URL: jdbc:h2:mem:APIRESTconSpringBoot
+User Name: user
+Password: password
+```
