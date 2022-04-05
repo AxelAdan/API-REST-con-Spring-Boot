@@ -1,3 +1,5 @@
+![Spring Boot](https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg)
+
 # API-REST-con-Spring-Boot
 Este es un proyecto en el cual creo mi primer API REST con Spring Boot.
 
@@ -19,5 +21,3 @@ JDBC URL: jdbc:h2:mem:APIRESTconSpringBoot
 User Name: user
 Password: password
 ```
-
-![Spring Boot](https://spring.io/images/spring-logo-9146a4d3298760c2e7e49595184e1975.svg)
