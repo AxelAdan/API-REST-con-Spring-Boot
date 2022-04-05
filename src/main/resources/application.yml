@@ -3,8 +3,8 @@ spring:
     name: API-REST-con-Spring-Boot
   datasource:
     driver-class-name: org.h2.Driver
-    username: a
-    password: a
+    username: user
+    password: password
     url: "jdbc:h2:mem:APIRESTconSpringBoot;DB_CLOSE_ON_EXIT=FALSE"
   h2:
     console:
